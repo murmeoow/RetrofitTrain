@@ -8,32 +8,17 @@
     tools:context=".ui.PostsFragment">
 
 
-    <TextView
-        android:id="@+id/tv_body_post"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/tv_id_post1"
-        app:layout_constraintTop_toBottomOf="@+id/tv_id_post1" />
-
-    <TextView
-        android:id="@+id/tv_id_post1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_title_post"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/tv_body_post"
-        app:layout_constraintTop_toBottomOf="@+id/tv_body_post" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/post_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>
